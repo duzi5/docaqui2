@@ -1,6 +1,5 @@
 import React, { useEffect, useRef} from 'react';
 import { createRoot } from 'react-dom/client';
-
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger.js';// Substitua pelo caminho correto do seu vídeo
 import MenuHeader from './components/MenuHeader/MenuHeader.jsx';

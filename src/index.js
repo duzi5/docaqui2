@@ -7,7 +7,7 @@ import MenuLateral from './components/MenuLateral/MenuLateral.jsx';
 import Presentation from './components/Presentation/Presentation.jsx';
 import Services from './components/Services/Services.jsx';
 import Diferencials from './components/Diferencials/Diferencials.jsx';
-
+import "./components/face.scss"
 function App() {// Adiciona a referência para o vídeo
 
     useEffect(()=>{

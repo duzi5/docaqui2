@@ -1,0 +1,64 @@
+@import "../face.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+#menuLateral {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  left: 0;
+  z-index: 10000;
+  @include breakpoints(small){
+    width: 20px;
+
+}
+@include breakpoints(medium){
+    width: 25px;
+
+}
+@include breakpoints(large){
+    width: 30px;
+
+}
+@include breakpoints(xlarge){
+    width: 35px;
+
+}
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .menuLink {
+        text-decoration: none;
+        list-style: none;
+        writing-mode:vertical-rl;
+        text-orientation:upright;
+        font-family: "Silkscreen", sans-serif;
+        margin: 5vh;
+        color: $color-quaternary;
+        font-size: small;
+        @include breakpoints(small){
+            font-size: 5px;
+        }
+        @include breakpoints(medium){
+            font-size: 7px;
+        }
+        @include breakpoints(large){
+            font-size: 12px;
+        }
+        @include breakpoints(xlarge){
+            font-size: 14px;
+        }
+        
+    }
+    .menuLink.active {
+        background-color: $color-tertiary;
+    }
+  }
+}

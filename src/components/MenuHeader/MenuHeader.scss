@@ -1,0 +1,93 @@
+
+@import "../face.scss";
+
+
+
+#menuHeader{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+      background-color: #5A5359;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    z-index: 1000;
+    #predios{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        transform-origin: center;
+    }
+    .nuvens {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        .nuvem{
+            position: absolute;
+            z-index: 3;
+            scale: 3;
+            background-position: center;
+
+      
+        }
+      }
+      
+
+    
+    &::after{
+        content: "";
+        overflow: hidden;
+        position: absolute;
+        background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1b222b8a;
+        z-index: 300;
+    }
+    
+    #logo{
+        max-width: 30vw;
+        align-self: center;
+        max-height: 100%;
+        object-fit: cover;
+        z-index: 2;
+    } &::before{
+        content: "";
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        z-index: 2;
+        color: #1b222b8a;
+        @include breakpoints(small){
+            font-size:2rem ;
+        }
+        @include breakpoints(medium){
+            font-size: 4rem;
+        }
+        @include breakpoints(large){
+            font-size: 6rem;
+        }
+        @include breakpoints(xlarge){
+            font-size: 8rem;
+        }
+    }
+
+
+}

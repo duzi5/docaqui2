@@ -1,0 +1,86 @@
+@import "../face.scss";
+
+#intro2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e8e5e5;
+    background-image: url("./predios2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+
+    &::before{
+        content: "";
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2b2b2bb5;
+    }
+
+    .video-container {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+
+
+        justify-content: center;
+        align-items: center;
+        background-color: #ec0c2e20;
+        max-width: 100vw; 
+        min-width: 100vw;
+        height: 40vh;
+        background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+        background-position: center;
+        background-clip: content-box;
+    }
+
+    .video-overlay{
+        background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 4vh;
+        font-size: 14rem;
+        color: #a8aaad;
+    }
+
+    h1{
+        color: #a8aaad;
+        font-size: 14rem;
+    
+        font-weight: 300;
+        @include breakpoints(small){
+            font-size: 100px
+        }
+    }
+
+}
+.header{
+    display: flex;
+    width: 100vw;
+    height: 10vh; // Reduz a altura do cabeçalho para 10vh
+    position: fixed;
+    background-color: #81696c;
+
+    video {
+        width: 30%; // Reduz a largura do vídeo para 30%
+        height: 100%; // Ajusta a altura do vídeo para preencher completamente o cabeçalho
+        position: relative; // Posiciona o vídeo em relação ao cabeçalho
+        object-fit: cover; 
+        background-color: #c075ef;
+        filter: blur(20px) hue-rotate(300deg);
+    }
+}

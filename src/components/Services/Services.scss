@@ -1,0 +1,63 @@
+@import "../face.scss";
+
+.services {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  h1 {
+    font-family: "Poppins", sans-serif;
+    color: $color-quaternary;
+    font-size: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3pc;
+    margin-top: 3pc;
+    text-shadow: 0 0 10px #a8aaad, 0 0 40px #a8aaad, 0 0 80px #a8aaad;
+    @include breakpoints(small) {
+      font-size: 5rem;
+    }
+    @include breakpoints(medium) {
+      font-size: 6rem;
+    }
+    @include breakpoints(large) {
+      font-size: 7rem;
+    }
+    @include breakpoints(xlarge) {
+      font-size: 8rem;
+    }
+  }
+
+  .serviceButton {
+    width: 100vw;
+    height: fit-content;
+    color: $color-primary;
+    font-family: "sinete", sans-serif;
+    background-color: #b6b6b6;
+    font-size: 7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3pc;
+    text-wrap: nowrap;
+    overflow: hidden;
+    padding: 15px 30px;
+    transition: 0.2s ;
+
+    &:hover{
+        background-color: #a8aaad;
+        color: $color-primary;
+        cursor: pointer;
+        box-shadow: 0 0 10px #a8aaad, 0 0 40px #a8aaad, 0 0 80px #a8aaad;
+    }
+
+}
+  
+}

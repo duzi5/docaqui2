@@ -7,10 +7,22 @@ import MenuLateral from './components/MenuLateral/MenuLateral.jsx';
 import Presentation from './components/Presentation/Presentation.jsx';
 import Services from './components/Services/Services.jsx';
 import Diferencials from './components/Diferencials/Diferencials.jsx';
+import Lenis from '@studio-freight/lenis'
 
 function App() {// Adiciona a referência para o vídeo
-
     useEffect(()=>{
+        const lenis = new Lenis()
+    
+        lenis.on('scroll', (e) => {
+          console.log(e)
+        })
+        
+        function raf(time) {
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+        }
+        
+        requestAnimationFrame(raf)
         gsap.registerPlugin(ScrollTrigger)
     }, [])
 

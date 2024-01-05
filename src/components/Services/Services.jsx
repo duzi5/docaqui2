@@ -7,6 +7,26 @@ const Services = () => {
     const h1Ref = useRef(null);
 
     useEffect(() => {
+
+
+        gsap.to(['body', '#presentation', '.diferencials'],{
+            backgroundColor:"white",
+            scrollTrigger:{
+                trigger: ".services",
+                start: "top center",
+                end: "top center",
+                scrub: 2,
+                markers: true
+            }
+        })
+
+
+
+
+
+
+
+
         gsap.to(h1Ref.current, {
             scale: 1.2,
             opacity: 0.5,

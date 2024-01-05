@@ -45,7 +45,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html',
         }),
-        
+
     ],
     devServer: {
         static: {
@@ -54,5 +54,10 @@ module.exports = {
         compress: true,
         port: 9000,
         hot: true,
-    },
+    },performance: {
+  hints: "warning",
+  maxAssetSize: 244 * 1024, // 244 KiB
+  maxEntrypointSize: 244 * 1024, // 244 KiB
+}
+
 };

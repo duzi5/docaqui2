@@ -52,12 +52,9 @@ module.exports = {
             directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 9000,
+        port: 3000,
         hot: true,
-    },performance: {
-  hints: "warning",
-  maxAssetSize: 244 * 1024, // 244 KiB
-  maxEntrypointSize: 244 * 1024, // 244 KiB
-}
+    },
 
 };
+
